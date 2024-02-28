@@ -14,8 +14,8 @@ from sklearn.metrics import classification_report
 # Define the Streamlit app
 def app():
     
-    st.title('Symbol Classification')
-    st.subheader('by Louie F. Cervantes M.Eng., WVSU College of ICT')
+    st.title('aespa Symbol Classification')
+    st.subheader('by Phoebe Grace Juayong, WVSU College of ICT')
     
     st.write('Dataset description:')
 
@@ -43,7 +43,7 @@ def app():
         clf = BernoulliNB()
 
     if st.button('Start'):
-        df = pd.read_csv('Arendain_Smiley.csv', header=None)
+        df = pd.read_csv('aespaSymbols.csv', header=None)
         # st.dataframe(df, use_container_width=True)  
         
         # display the dataset
